@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            background-color: white;
+        }
+        .container1{
+            display: flex;
+            flex-wrap:wrap;
+            flex-direction:column;
+            width: 500px;
+            align-items: center;
+            text-align: center;
+        }
+        .container2{
+            display: flex;
+            flex-wrap:wrap;
+            flex-direction: column;
+            justify-content:left;
+            width: 500px;
+            align-items: center;
+            text-align: center;
+        }
+        .container3 {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: right;
+            width: 500px;
+            align-items: center;
+            text-align: center;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            float:left;
+
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            float: right;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+        }
+        img{
+            width: 100%;
+        }
+        #header{
+            width: 100%;
+            display: flex;
+            flex-wrap:nowrap;
+            justify-content: space-around;
+            margin: 10px;
+        }
+        @media screen and (max-width: 1440px){
+            img{
+                width: 80%;
+                margin: auto;
+                }
+        }
+        @media screen and (max-width:768px) {
+            img{
+                width: 50%;
+                
+                }
+            #header{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap:row;
+                justify-content:space-around;
+                margin: auto;
+                align-items: center;
+            }
+            body{
+                background-color: white;
+                align-items: center;
+            }
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <div class="container1">
+                <div class="box1">
+                    <h4>Titulo</h4>
+                    <img src="img/download (1).jpg">
+                </div>
+                <div class="box2">
+                    <h4>Titulo</h4>
+                    <p>
+                        é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja
+                        de tipos e os embaralhou para fazer um livro de modelos de tipos.
+                    </p>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="box1">
+                    <h4>Titulo</h4>
+                    <img src="img/download.jpg">
+                </div>
+                <div class="box2">
+                    <h4>Titulo</h4>
+                    <p>
+                        é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja
+                        de tipos e os embaralhou para fazer um livro de modelos de tipos.
+                    </p>
+                </div>
+            </div>
+            <div class="container3">
+                <h4>Titulo</h4>
+
+                <div class="box3">
+                    <h4>é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</h4>
+                    <img src="img/images (1).jpg">
+                </div>
+                <div class="box3">
+                    <h4>é simplesmente uma simulação de texto da indústria tipográfica e de impressos</h4>
+                    <img src="img/images.jpg">
+                </div>
+                <div class="box3">
+                    <h4>é simplesmente uma simulação de texto da indústria tipográfica e de impressos</h4>
+                    <img src="img/página-de-notebook-em-branco-está-sobre-mesa-escritório-madeira-com-café-e-suprimentos-para-notebooks-vista-superior-espaço-215291950.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
